@@ -192,12 +192,12 @@
     }
 
     function drawTrail() {
-      trail.trailX += (trail.targetX - trail.trailX) * 0.02;
-      trail.trailY += (trail.targetY - trail.trailY) * 0.02;
-      trail.wakeX += (trail.targetX - trail.wakeX) * 0.006;
-      trail.wakeY += (trail.targetY - trail.wakeY) * 0.006;
-      trail.afterglowX += (trail.targetX - trail.afterglowX) * 0.0015;
-      trail.afterglowY += (trail.targetY - trail.afterglowY) * 0.0015;
+      trail.trailX += (trail.targetX - trail.trailX) * 0.04;
+      trail.trailY += (trail.targetY - trail.trailY) * 0.04;
+      trail.wakeX += (trail.targetX - trail.wakeX) * 0.012;
+      trail.wakeY += (trail.targetY - trail.wakeY) * 0.012;
+      trail.afterglowX += (trail.targetX - trail.afterglowX) * 0.003;
+      trail.afterglowY += (trail.targetY - trail.afterglowY) * 0.003;
 
       placeGradient(glowHead, trail.targetX, trail.targetY);
       placeGradient(glowTrail, trail.trailX, trail.trailY);
